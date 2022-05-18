@@ -18,9 +18,10 @@ body {
   display: flex;
 }
 
+/*
 .pippy {
- 
 }
+*/
 
 .hunger {
   display: flex;
@@ -30,7 +31,7 @@ body {
   height: 2vh;
 }
 
-.hunger-meter {
+#hunger-meter {
   background: pink;
   width: 8vw;
   height: 2vh;
