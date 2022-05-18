@@ -18,6 +18,11 @@ body {
   display: flex;
 }
 
-.pippy {
+.hunger {
   display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.hunger-bar {
 }
