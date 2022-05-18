@@ -1,7 +1,5 @@
-let hunger = document.getElementById("hunger");
-
 function hungry() {
-  hunger - 5;
+  document.getElementById("hunger-meter").width = 
 }
 
 setInterval(hungry, 500);

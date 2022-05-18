@@ -18,11 +18,20 @@ body {
   display: flex;
 }
 
-.hunger {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
+.pippy {
+ 
 }
 
-.hunger-bar {
+.hunger {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  width: 8vw;
+  height: 2vh;
+}
+
+.hunger-meter {
+  background: pink;
+  width: 8vw;
+  height: 2vh;
 }
