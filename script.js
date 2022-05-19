@@ -21,16 +21,16 @@ function hungry() {
 const the_depletion_of_hunger = setInterval(hungry, 2000);
 window.onload = the_depletion_of_hunger;
 
-
-
-
-
-var chicken = document.getElementById("chicken");
+let chicken = document.getElementById("chicken");
 
 function eat() {
   console.log("clicked");
-  
-  
+
+  var meter = document.getElementById("hunger-meter");
+  var current_length = meter.offsetWidth;
+  var new_length = current_length + 12;
+
+  meter.style.width = new_length + "px";
 }
 
 chicken.addEventListener("click", eat);
