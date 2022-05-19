@@ -7,6 +7,7 @@ function hungry() {
   if (current_length == 0) {
     console.log("death");
     clearInterval(the_depletion_of_hunger);
+    chicken.removeEventListener("click", eat)
   }
 
   var new_length = current_length - 4;
