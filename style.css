@@ -36,3 +36,11 @@ body {
   width: 8vw;
   height: 2vh;
 }
+
+.chicken {
+  display: flex;
+  margin: 2%;
+  width: 40px;
+  height: 40px;
+  background: skyblue;
+}

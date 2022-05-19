@@ -23,13 +23,14 @@ window.onload = the_depletion_of_hunger;
 
 
 
+
+
+var chicken = document.getElementById("chicken");
+
 function eat() {
-  var chicken = document.getElementById("chicken")
-  
-  console.log("Clicked");
-  
+  console.log("clicked");
   
   
 }
 
-button.addEventListener("click", eat);
+chicken.addEventListener("click", eat);
