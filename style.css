@@ -19,26 +19,53 @@ body {
 }
 
 
-.pippy {
+#pippy {
   content:url("https://cdn.glitch.global/f991fb0b-d232-4af4-8263-8db275e14328/8D70F248-559D-45AD-8F93-CE1BC9613E2C.jpeg?v=1653010369320");
 }
 
+.menu {
+  display: flex;
+  flex-direction: row;
+  width: 30vw;
+  align-items: center;
+  justify-content: space-between;
+}
 
-.hunger {
+.stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 2%;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 2%;
+}
+
+.meter {
   display: flex;
   flex-direction: column;
   margin: 2%;
-  width: 8vw;
+  width: 100px;
   height: 2vh;
 }
 
 #hunger-meter {
   background: pink;
-  width: 8vw;
+  width: 100px;
   height: 2vh;
 }
 
-.chicken {
+#fun-meter {
+  background: pink;
+  width: 100px;
+  height: 2vh;
+}
+
+#chicken {
   display: flex;
   margin: 2%;
   width: 40px;
