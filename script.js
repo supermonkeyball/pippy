@@ -2,6 +2,16 @@ var pippy = document.getElementById("pippy");
 var death = document.getElementById("death");
 
 let button = document.getElementById("button");
+let slider = document.getElementById("slider");
+let sample = document.getElementById("sample");
+
+function color() {
+  let value = slider.value;
+  pippy.style.filter = `hue-rotate(${value}deg)`;
+  sample.style.filter = `hue-rotate(${value}deg)`;
+}
+
+slider.addEventListener("input", color);
 
 function save() {
   console.log("clicked");

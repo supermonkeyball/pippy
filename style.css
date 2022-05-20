@@ -65,28 +65,28 @@ body {
 }
 
 #hunger-meter {
-  background: #fb7465;
+  background: #c1cdcc;
   width: 100px;
   height: 2vh;
   border-radius: 4px;
 }
 
 #toilet-meter {
-  background: #fb7465;
+  background: #c1cdcc;
   width: 100px;
   height: 2vh;
   border-radius: 4px;
 }
 
 #fun-meter {
-  background: #fb7465;
+  background: #c1cdcc;
   width: 100px;
   height: 2vh;
   border-radius: 4px;
 }
 
 #energy-meter {
-  background: #fb7465;
+  background: #c1cdcc;
   width: 100px;
   height: 2vh;
   border-radius: 4px;
@@ -97,7 +97,7 @@ body {
   flex-direction: column;
   vertical-align: top;
   margin: 2%;
-  background: #f5f5f5;
+  background: #e6ebea;
   padding: 1%;
   border-radius: 4px;
   align-items: center;
