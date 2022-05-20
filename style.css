@@ -64,6 +64,7 @@ body {
   background: pink;
   width: 100px;
   height: 2vh;
+  border-radius: 4px;
 }
 
 #chicken {
