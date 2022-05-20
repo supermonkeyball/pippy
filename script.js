@@ -255,9 +255,11 @@ function sleep() {
 nyquil.addEventListener("click", sleep);
 
 function death() {
-  var stomach =
-  var bladder =
-  var feelings =
-  var 
+ 
 }
+
+// local storage for name, color
+// death screen
+// button cooldown
+// add graphics
 
