@@ -8,11 +8,13 @@ function save() {
   
   var content = document.getElementById("text").value;
   var intro = document.getElementById("intro");
-  var name = document.getElementsByClassName("name");
+  var name = document.getElementById("name");
+  var name2 = document.getElementById("name2");
   
   localStorage.setItem("content", content);
   intro.style.display = 'none';
   name.innerHTML = content;
+  name2.innerHTML = content;
 }
 
 button.addEventListener("click", save);

@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
     <title>Hello World!</title>
-
     <link rel="stylesheet" href="/style.css" />
-
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
     <script src="/script.js" defer></script>
   </head>
   <body>
@@ -16,13 +18,18 @@
       <p>
         <textarea id="text"></textarea>
       </p>
-      <button id="button">
-        enter
-      </button>
+      <button id="button">enter</button>
     </div>
-    <div id="death"><div class="name">[NAME]</div>&nbsp;DIED</div>
+    <div id="death">
+      <div id="name2">[NAME]</div>
+      &nbsp;DIED
+    </div>
     <div class="container">
-      <div class="header">KEEP&nbsp;<div class="name">[NAME]</div>&nbsp;ALIVE</div>
+      <div class="header">
+        KEEP&nbsp;
+        <div id="name">[NAME]</div>
+        &nbsp;ALIVE
+      </div>
       <img
         id="pippy"
         src="https://cdn.glitch.global/f991fb0b-d232-4af4-8263-8db275e14328/162C7935-0BA4-40CC-A51D-BF83BE2A0582.gif?v=1653015911736"
@@ -41,7 +48,21 @@
         <div class="inventory">
           INVENTORY
           <div class="items">
-            <button id="chicken"></button>
+              <model-viewer
+                bounds="none"
+                id="chicken"
+                src="https://cdn.glitch.global/f991fb0b-d232-4af4-8263-8db275e14328/chicken.glb?v=1653031466254"
+                disable-zoom
+                ar
+                ar-modes="webxr scene-viewer quick-look"
+                camera-controls
+                environment-image="neutral"
+                shadow-intensity="0"
+              >
+                <div class="progress-bar hide" slot="progress-bar">
+                  <div class="update-bar"></div>
+                </div>
+              </model-viewer>
             <button id="ball"></button>
             <button id="nyquil"></button>
             <button id="hydrant"></button>

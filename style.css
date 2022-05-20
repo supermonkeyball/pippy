@@ -96,7 +96,7 @@ body {
   flex-direction: column;
   vertical-align: top;
   margin: 2%;
-  background: #dadad8;
+  background: #f5f5f5;
   padding: 1%;
   border-radius: 4px;
   align-items: center;
@@ -112,18 +112,16 @@ body {
   display: flex;
   flex-direction: row;
   margin: 2%;
-  width: 40px;
-  height: 40px;
-  background: #fb7465;
+  width: 150px;
+  height: 150px;
 }
 
 #hydrant {
   display: flex;
   flex-direction: row;
   margin: 2%;
-  width: 40px;
-  height: 40px;
-  background: #fb7465;
+  width: 100px;
+  height: 100px;
 }
 
 #ball {
@@ -155,6 +153,7 @@ body {
   width: 100vw;
   min-height: 120vh;
   font-size: 2em;
+  text-transform: uppercase;
   color: #fb7465;
 }
 
