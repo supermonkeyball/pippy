@@ -60,6 +60,37 @@ function toilet() {
 const the_depletion_of_toilet = setInterval(toilet, 3000);
 window.onload = the_depletion_of_toilet;
 
+// muscle
+
+function exercise() {
+  var meter = document.getElementById("toilet-meter");
+  var current_length = meter.offsetWidth;
+
+  console.log(current_length);
+
+  if (current_length == 0) {
+    console.log("death");
+    clearInterval(the_depletion_of_toilet);
+    chicken.removeEventListener("click", toilet);
+  }
+
+  var new_length = current_length - 4;
+
+  if (new_length < 0) {
+    new_length = 0;
+  }
+
+  if (current_length < 30) {
+    document.getElementById("pippy").src =
+      "https://cdn.glitch.global/f991fb0b-d232-4af4-8263-8db275e14328/55FCD628-4B8B-4D87-AEB9-5A8E46BCDE1E.gif?v=1653016028730";
+  }
+
+  meter.style.width = new_length + "px";
+}
+
+const the_depletion_of_toilet = setInterval(toilet, 3000);
+window.onload = the_depletion_of_toilet;
+
 // eat chicken, regain hunger (lose bladder)
 
 let chicken = document.getElementById("chicken");
@@ -96,5 +127,4 @@ chicken.addEventListener("click", eat);
 // IF PLAY = HUNGER DOWN
 // IF WALK = ENERGY DOWN
 // IF SLEEP = PLAY DOWN
-// WHEN EAT = pippyHappy
 // WHEN HUNGER/PLAY LOW = pippySad

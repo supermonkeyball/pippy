@@ -20,7 +20,6 @@ body {
   display: flex;
 }
 
-
 #pippy {
   width: 20vw;
 }
@@ -38,13 +37,6 @@ body {
   display: flex;
   flex-direction: column;
   margin: 2%;
-}
-
-.items-head {
-  display: flex;
-  flex-direction: column;
-  margin: 2%;
-  background: #dadad8;
 }
 
 .meter {
@@ -69,6 +61,22 @@ body {
   border-radius: 4px;
 }
 
+.inventory {
+  display: flex;
+  flex-direction: column;
+  margin: 2%;
+  background: #dadad8;
+  padding: 1%;
+  border-radius: 4px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.items {
+  display: flex;
+  flex-direction: row;
+}
+
 #chicken {
   display: flex;
   flex-direction: row;
@@ -78,7 +86,25 @@ body {
   background: #fb7465;
 }
 
-#ball {
+#hydrant {
+  display: flex;
+  flex-direction: row;
+  margin: 2%;
+  width: 40px;
+  height: 40px;
+  background: #fb7465;
+}
+
+#dumbbell {
+  display: flex;
+  flex-direction: row;
+  margin: 2%;
+  width: 40px;
+  height: 40px;
+  background: #fb7465;
+}
+
+#nyquil {
   display: flex;
   flex-direction: row;
   margin: 2%;
