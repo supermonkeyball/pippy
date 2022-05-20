@@ -68,6 +68,13 @@ body {
   border-radius: 4px;
 }
 
+#energy-meter {
+  background: #fb7465;
+  width: 100px;
+  height: 2vh;
+  border-radius: 4px;
+}
+
 .inventory {
   display: flex;
   flex-direction: column;
@@ -103,7 +110,7 @@ body {
   background: #fb7465;
 }
 
-#dumbbell {
+#ball {
   display: flex;
   flex-direction: row;
   margin: 2%;

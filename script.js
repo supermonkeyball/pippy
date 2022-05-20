@@ -31,7 +31,7 @@ window.onload = the_depletion_of_hunger;
 
 // bladder
 
-function toilet() {
+function bladder() {
   var meter = document.getElementById("toilet-meter");
   var current_length = meter.offsetWidth;
 
@@ -40,7 +40,7 @@ function toilet() {
   if (current_length == 0) {
     console.log("death");
     clearInterval(the_depletion_of_toilet);
-    chicken.removeEventListener("click", gopee);
+    hydrant.removeEventListener("click", gopee);
   }
 
   var new_length = current_length - 1;
@@ -57,10 +57,10 @@ function toilet() {
   meter.style.width = new_length + "px";
 }
 
-const the_depletion_of_toilet = setInterval(toilet, 1500);
+const the_depletion_of_toilet = setInterval(bladder, 1500);
 window.onload = the_depletion_of_toilet;
 
-// muscle
+// feelings
 
 function feelings() {
   var meter = document.getElementById("fun-meter");
@@ -70,8 +70,8 @@ function feelings() {
 
   if (current_length == 0) {
     console.log("death");
-    clearInterval(the_depletion_of_activity);
-    chicken.removeEventListener("click", play);
+    clearInterval(the_depletion_of_fun);
+    ball.removeEventListener("click", play);
   }
 
   var new_length = current_length - 2;
@@ -88,8 +88,8 @@ function feelings() {
   meter.style.width = new_length + "px";
 }
 
-const the_depletion_of_activity = setInterval(activity, 4400);
-window.onload = the_depletion_of_activity;
+const the_depletion_of_fun = setInterval(feelings, 4400);
+window.onload = the_depletion_of_fun;
 
 // eat chicken, regain hunger (lose bladder)
 
@@ -132,13 +132,13 @@ function gopee() {
   console.log("clicked");
 
   var pippy = document.getElementById("pippy");
-  var stomach = document.getElementById("fun-meter");
-  var current_length = stomach.offsetWidth;
-  var new_length = current_length + 100;
+  var bladder = document.getElementById("toilet-meter");
+  var current_length = bladder.offsetWidth;
+  var new_length = current_length + 20;
 
-  var bladder = document.getElementById("energy-meter");
-  var bladder_before = bladder.offsetWidth;
-  var bladder_after = bladder_before - 12;
+  var feelings = document.getElementById("fun-meter");
+  var feelings_before = feelings.offsetWidth;
+  var feelings_after = feelings_before - 12;
 
   if (new_length > 100) {
     new_length = 100;
@@ -151,13 +151,48 @@ function gopee() {
   document.getElementById("pippy").src =
     "https://cdn.glitch.global/f991fb0b-d232-4af4-8263-8db275e14328/CB92F614-5138-421B-B7ED-D9DA1771235D.gif?v=1653016002999";
 
-  stomach.style.width = new_length + "px";
-  bladder.style.width = bladder_after + "px";
+  bladder.style.width = new_length + "px";
+  feelings.style.width = feelings_after + "px";
 }
 
-chicken.addEventListener("click", eat);
+hydrant.addEventListener("click", gopee);
+
+// play, regain feelings (lose sta,mina)
+
+let ball = document.getElementById("ball");
+
+function play() {
+  console.log("clicked");
+
+  var pippy = document.getElementById("pippy");
+  var bladder = document.getElementById("fun-meter");
+  var current_length = feelings.offsetWidth;
+  var new_length = current_length + 20;
+
+  var stamina = document.getElementById("energy-meter");
+  var stamina_before = stamina.offsetWidth;
+  var stamina_after = stamina_before - 12;
+
+  if (new_length > 100) {
+    new_length = 100;
+  }
+
+  setTimeout(function () {
+    document.getElementById("pippy").src =
+      "https://cdn.glitch.global/f991fb0b-d232-4af4-8263-8db275e14328/162C7935-0BA4-40CC-A51D-BF83BE2A0582.gif?v=1653015911736";
+  }, 1200);
+  document.getElementById("pippy").src =
+    "https://cdn.glitch.global/f991fb0b-d232-4af4-8263-8db275e14328/CB92F614-5138-421B-B7ED-D9DA1771235D.gif?v=1653016002999";
+
+  bladder.style.width = new_length + "px";
+  feelings.style.width = feelings_after + "px";
+}
+
+hydrant.addEventListener("click", gopee);
+
+
+
 
 // IF PLAY = HUNGER DOWN
-// IF WALK = ENERGY DOWN
 // IF SLEEP = PLAY DOWN
 // WHEN HUNGER/PLAY LOW = pippySad
