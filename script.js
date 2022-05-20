@@ -1,10 +1,24 @@
 var pippy = document.getElementById("pippy");
 var death = document.getElementById("death");
 
+let button = document.getElementById("button");
+
 function save() {
+  console.log("clicked");
+  
   var content = document.getElementById("text").value;
+  var intro = document.getElementById("intro");
   
   localStorage.setItem("content", content);
+  intro.style.display = 'none';
+}
+
+button.addEventListener("click", save);
+
+function name() {
+  var content = localStorage.getItem("content");
+  
+  document.getElementById("text").value = content;
   
 }
 
