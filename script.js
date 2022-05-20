@@ -35,3 +35,7 @@ function eat() {
 }
 
 chicken.addEventListener("click", eat);
+
+function mood() {
+  var happy = "https://cdn.glitch.global/f991fb0b-d232-4af4-8263-8db275e14328/trim.0E08199C-AAEA-4D2A-B8EE-5B093ED9848D.MOV?v=1653010433703"
+}
