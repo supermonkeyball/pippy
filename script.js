@@ -269,11 +269,7 @@ function sleep() {
 
 nyquil.addEventListener("click", sleep);
 
-function death() {
- 
-}
 
-// local storage for name, color
+// local storage for color
 // button cooldown
-// add graphics
 

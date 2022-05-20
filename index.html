@@ -14,6 +14,15 @@
   </head>
   <body>
     <div id="intro">
+      what's your favorite color?<br>
+      <p><input
+        type="range"
+        min="0"
+        max="300"
+        id="slider"
+        class="slides"
+        name="color"
+                /></p>
       name your pet:
       <p>
         <textarea id="text"></textarea>
@@ -48,52 +57,66 @@
         <div class="inventory">
           INVENTORY
           <div class="items">
-              <model-viewer
-                bounds="none"
-                id="chicken"
-                src="https://cdn.glitch.global/f991fb0b-d232-4af4-8263-8db275e14328/chicken.glb?v=1653031466254"
-                disable-zoom
-                ar
-                ar-modes="webxr scene-viewer quick-look"
-                camera-controls
-                environment-image="neutral"
-                shadow-intensity="0"
-              >
-                <div class="progress-bar hide" slot="progress-bar">
-                  <div class="update-bar"></div>
-                </div>
-              </model-viewer>
             <model-viewer
-                bounds="none"
-                id="ball"
-                src="https://cdn.glitch.global/f991fb0b-d232-4af4-8263-8db275e14328/ball.glb?v=1653031910116"
-                disable-zoom
-                ar
-                ar-modes="webxr scene-viewer quick-look"
-                camera-controls
-                environment-image="neutral"
-                shadow-intensity="0"
-              >
-                <div class="progress-bar hide" slot="progress-bar">
-                  <div class="update-bar"></div>
-                </div>
-              </model-viewer>
-            <button id="nyquil"></button>
-                        <model-viewer
-                bounds="none"
-                id="hydrant"
-                src="https://cdn.glitch.global/f991fb0b-d232-4af4-8263-8db275e14328/hydrant.glb?v=1653032478999"
-                disable-zoom
-                ar
-                ar-modes="webxr scene-viewer quick-look"
-                camera-controls
-                environment-image="neutral"
-                shadow-intensity="0"
-              >
-                <div class="progress-bar hide" slot="progress-bar">
-                  <div class="update-bar"></div>
-                </div>
-              </model-viewer>
+              bounds="none"
+              id="chicken"
+              src="https://cdn.glitch.global/f991fb0b-d232-4af4-8263-8db275e14328/chicken.glb?v=1653031466254"
+              disable-zoom
+              ar
+              ar-modes="webxr scene-viewer quick-look"
+              camera-controls
+              environment-image="neutral"
+              shadow-intensity="0"
+            >
+              <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+              </div>
+            </model-viewer>
+            <model-viewer
+              bounds="none"
+              id="ball"
+              src="https://cdn.glitch.global/f991fb0b-d232-4af4-8263-8db275e14328/ball.glb?v=1653031910116"
+              disable-zoom
+              ar
+              ar-modes="webxr scene-viewer quick-look"
+              camera-controls
+              environment-image="neutral"
+              shadow-intensity="0"
+            >
+              <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+              </div>
+            </model-viewer>
+            <model-viewer
+              bounds="none"
+              id="nyquil"
+              src="https://cdn.glitch.global/f991fb0b-d232-4af4-8263-8db275e14328/nyquil.glb?v=1653033106947"
+              disable-zoom
+              ar
+              ar-modes="webxr scene-viewer quick-look"
+              camera-controls
+              environment-image="neutral"
+              shadow-intensity="0"
+            >
+              <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+              </div>
+            </model-viewer>
+            <model-viewer
+              bounds="none"
+              id="hydrant"
+              src="https://cdn.glitch.global/f991fb0b-d232-4af4-8263-8db275e14328/hydrant.glb?v=1653032478999"
+              disable-zoom
+              ar
+              ar-modes="webxr scene-viewer quick-look"
+              camera-controls
+              environment-image="neutral"
+              shadow-intensity="0"
+            >
+              <div class="progress-bar hide" slot="progress-bar">
+                <div class="update-bar"></div>
+              </div>
+            </model-viewer>
           </div>
         </div>
       </div>

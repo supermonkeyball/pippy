@@ -33,6 +33,7 @@ body {
 
 .header {
   display: flex;
+  font-size: 1.3em;
   text-transform: uppercase;
 }
 
@@ -120,25 +121,24 @@ body {
   display: flex;
   flex-direction: row;
   margin: 2%;
-  width: 140px;
-  height: 140px;
+  width: 130px;
+  height: 130px;
 }
 
 #ball {
   display: flex;
   flex-direction: row;
   margin: 2%;
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
 }
 
 #nyquil {
   display: flex;
   flex-direction: row;
   margin: 2%;
-  width: 40px;
-  height: 40px;
-  background: #fb7465;
+  width: 130px;
+  height: 130px;
 }
 
 #death {
