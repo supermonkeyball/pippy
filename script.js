@@ -25,13 +25,14 @@ function hungry() {
 const the_depletion_of_hunger = setInterval(hungry, 2000);
 window.onload = the_depletion_of_hunger;
 
+
+
 let chicken = document.getElementById("chicken");
 
 function eat() {
   console.log("clicked");
 
   var pippy = document.getElementById("pippy");
-  var pippyHappy = "https://cdn.glitch.global/f991fb0b-d232-4af4-8263-8db275e14328/CD5BCB46-3421-4BBA-8E01-6DBEBF68C734.gif?v=1653014506715";
 
   var meter = document.getElementById("hunger-meter");
   var current_length = meter.offsetWidth;
@@ -42,14 +43,11 @@ function eat() {
   }
 
   meter.style.width = new_length + "px";
-  document.getElementById("pippy").content = 'url("https://cdn.glitch.global/f991fb0b-d232-4af4-8263-8db275e14328/CD5BCB46-3421-4BBA-8E01-6DBEBF68C734.gif?v=1653014506715")';
+  document.getElementById("pippy").src = "https://cdn.glitch.global/f991fb0b-d232-4af4-8263-8db275e14328/CB92F614-5138-421B-B7ED-D9DA1771235D.gif?v=1653016002999";
 }
 
 chicken.addEventListener("click", eat);
 
-function mood() {
-
-}
 
 // IF FEED = BLADDER DOWN
 // IF PLAY = HUNGER DOWN
