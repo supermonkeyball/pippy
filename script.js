@@ -1,4 +1,5 @@
 var pippy = document.getElementById("pippy");
+var death = document.getElementById("death");
 
 //stomach
 
@@ -10,8 +11,7 @@ function stomach() {
 
   if (current_length == 0) {
     console.log("death");
-    clearInterval(the_depletion_of_hunger);
-    chicken.removeEventListener("click", eat);
+    death.style.display = 'flex';
   }
 
   var new_length = current_length - 4;
@@ -41,8 +41,7 @@ function bladder() {
 
   if (current_length == 0) {
     console.log("death");
-    clearInterval(the_depletion_of_toilet);
-    hydrant.removeEventListener("click", gopee);
+    death.style.display = 'flex';
   }
 
   var new_length = current_length - 1;
@@ -59,7 +58,7 @@ function bladder() {
   meter.style.width = new_length + "px";
 }
 
-const the_depletion_of_toilet = setInterval(bladder, 1500);
+const the_depletion_of_toilet = setInterval(bladder, 1200);
 window.onload = the_depletion_of_toilet;
 
 // feelings
@@ -72,8 +71,7 @@ function feelings() {
 
   if (current_length == 0) {
     console.log("death");
-    clearInterval(the_depletion_of_fun);
-    ball.removeEventListener("click", play);
+    death.style.display = 'flex';
   }
 
   var new_length = current_length - 2;
@@ -90,7 +88,7 @@ function feelings() {
   meter.style.width = new_length + "px";
 }
 
-const the_depletion_of_fun = setInterval(feelings, 4400);
+const the_depletion_of_fun = setInterval(feelings, 3400);
 window.onload = the_depletion_of_fun;
 
 // stamina
@@ -103,8 +101,7 @@ function stamina() {
 
   if (current_length == 0) {
     console.log("death");
-    clearInterval(the_depletion_of_fun);
-    nyquil.removeEventListener("click", sleep);
+    death.style.display = 'flex';
   }
 
   var new_length = current_length - 2;
@@ -121,7 +118,7 @@ function stamina() {
   meter.style.width = new_length + "px";
 }
 
-const the_depletion_of_energy = setInterval(stamina, 4400);
+const the_depletion_of_energy = setInterval(stamina, 3400);
 window.onload = the_depletion_of_energy;
 
 
@@ -259,7 +256,6 @@ function death() {
 }
 
 // local storage for name, color
-// death screen
 // button cooldown
 // add graphics
 
