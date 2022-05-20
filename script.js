@@ -8,19 +8,14 @@ function save() {
   
   var content = document.getElementById("text").value;
   var intro = document.getElementById("intro");
+  var name = document.getElementsByClassName("name");
   
   localStorage.setItem("content", content);
   intro.style.display = 'none';
+  name.innerHTML = content;
 }
 
 button.addEventListener("click", save);
-
-function name() {
-  var content = localStorage.getItem("content");
-  
-  document.getElementById("text").value = content;
-  
-}
 
 //stomach
 
