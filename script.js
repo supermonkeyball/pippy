@@ -116,7 +116,7 @@ function feelings() {
   meter.style.width = new_length + "px";
 }
 
-const the_depletion_of_fun = setInterval(feelings, 3400);
+const the_depletion_of_fun = setInterval(feelings, 3000);
 window.onload = the_depletion_of_fun;
 
 // stamina
@@ -146,7 +146,7 @@ function stamina() {
   meter.style.width = new_length + "px";
 }
 
-const the_depletion_of_energy = setInterval(stamina, 3400);
+const the_depletion_of_energy = setInterval(stamina, 3000);
 window.onload = the_depletion_of_energy;
 
 
@@ -160,7 +160,7 @@ function eat() {
 
   var stomach = document.getElementById("hunger-meter");
   var current_length = stomach.offsetWidth;
-  var new_length = current_length + 12;
+  var new_length = current_length + 10;
 
   var bladder = document.getElementById("toilet-meter");
   var bladder_before = bladder.offsetWidth;
@@ -196,7 +196,7 @@ function gopee() {
 
   var feelings = document.getElementById("fun-meter");
   var feelings_before = feelings.offsetWidth;
-  var feelings_after = feelings_before - 12;
+  var feelings_after = feelings_before - 14;
 
   if (new_length > 100) {
     new_length = 100;
@@ -228,7 +228,7 @@ function play() {
 
   var stamina = document.getElementById("energy-meter");
   var stamina_before = stamina.offsetWidth;
-  var stamina_after = stamina_before - 12;
+  var stamina_after = stamina_before - 16;
 
   if (new_length > 100) {
     new_length = 100;
@@ -279,7 +279,5 @@ function sleep() {
 
 nyquil.addEventListener("click", sleep);
 
-
-// local storage for color
-// button cooldown
+// add button cooldown
 
