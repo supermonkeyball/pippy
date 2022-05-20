@@ -1,6 +1,6 @@
 //stomach
 
-function hungry() {
+function stomach() {
   var meter = document.getElementById("hunger-meter");
   var current_length = meter.offsetWidth;
 
@@ -26,7 +26,7 @@ function hungry() {
   meter.style.width = new_length + "px";
 }
 
-const the_depletion_of_hunger = setInterval(hungry, 2000);
+const the_depletion_of_hunger = setInterval(stomach, 2000);
 window.onload = the_depletion_of_hunger;
 
 // bladder
@@ -40,10 +40,10 @@ function toilet() {
   if (current_length == 0) {
     console.log("death");
     clearInterval(the_depletion_of_toilet);
-    chicken.removeEventListener("click", toilet);
+    chicken.removeEventListener("click", gopee);
   }
 
-  var new_length = current_length - 4;
+  var new_length = current_length - 1;
 
   if (new_length < 0) {
     new_length = 0;
@@ -57,24 +57,24 @@ function toilet() {
   meter.style.width = new_length + "px";
 }
 
-const the_depletion_of_toilet = setInterval(toilet, 3000);
+const the_depletion_of_toilet = setInterval(toilet, 1500);
 window.onload = the_depletion_of_toilet;
 
 // muscle
 
-function exercise() {
-  var meter = document.getElementById("toilet-meter");
+function feelings() {
+  var meter = document.getElementById("fun-meter");
   var current_length = meter.offsetWidth;
 
   console.log(current_length);
 
   if (current_length == 0) {
     console.log("death");
-    clearInterval(the_depletion_of_toilet);
-    chicken.removeEventListener("click", toilet);
+    clearInterval(the_depletion_of_activity);
+    chicken.removeEventListener("click", play);
   }
 
-  var new_length = current_length - 4;
+  var new_length = current_length - 2;
 
   if (new_length < 0) {
     new_length = 0;
@@ -88,8 +88,8 @@ function exercise() {
   meter.style.width = new_length + "px";
 }
 
-const the_depletion_of_toilet = setInterval(toilet, 3000);
-window.onload = the_depletion_of_toilet;
+const the_depletion_of_activity = setInterval(activity, 4400);
+window.onload = the_depletion_of_activity;
 
 // eat chicken, regain hunger (lose bladder)
 
@@ -104,6 +104,39 @@ function eat() {
   var new_length = current_length + 12;
 
   var bladder = document.getElementById("toilet-meter");
+  var bladder_before = bladder.offsetWidth;
+  var bladder_after = bladder_before - 12;
+
+  if (new_length > 100) {
+    new_length = 100;
+  }
+
+  setTimeout(function () {
+    document.getElementById("pippy").src =
+      "https://cdn.glitch.global/f991fb0b-d232-4af4-8263-8db275e14328/162C7935-0BA4-40CC-A51D-BF83BE2A0582.gif?v=1653015911736";
+  }, 1200);
+  document.getElementById("pippy").src =
+    "https://cdn.glitch.global/f991fb0b-d232-4af4-8263-8db275e14328/CB92F614-5138-421B-B7ED-D9DA1771235D.gif?v=1653016002999";
+
+  stomach.style.width = new_length + "px";
+  bladder.style.width = bladder_after + "px";
+}
+
+chicken.addEventListener("click", eat);
+
+// go to bathroom, regain bladder (lose brain)
+
+let hydrant = document.getElementById("hydrant");
+
+function gopee() {
+  console.log("clicked");
+
+  var pippy = document.getElementById("pippy");
+  var stomach = document.getElementById("fun-meter");
+  var current_length = stomach.offsetWidth;
+  var new_length = current_length + 100;
+
+  var bladder = document.getElementById("energy-meter");
   var bladder_before = bladder.offsetWidth;
   var bladder_after = bladder_before - 12;
 

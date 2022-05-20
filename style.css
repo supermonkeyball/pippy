@@ -61,9 +61,17 @@ body {
   border-radius: 4px;
 }
 
+#fun-meter {
+  background: #fb7465;
+  width: 100px;
+  height: 2vh;
+  border-radius: 4px;
+}
+
 .inventory {
   display: flex;
   flex-direction: column;
+  vertical-align: top;
   margin: 2%;
   background: #dadad8;
   padding: 1%;
