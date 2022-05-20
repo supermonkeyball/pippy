@@ -57,6 +57,7 @@ body {
   background: pink;
   width: 100px;
   height: 2vh;
+  border-radius: 4px;
 }
 
 #fun-meter {
@@ -66,6 +67,14 @@ body {
 }
 
 #chicken {
+  display: flex;
+  margin: 2%;
+  width: 40px;
+  height: 40px;
+  background: skyblue;
+}
+
+#ball {
   display: flex;
   margin: 2%;
   width: 40px;
