@@ -8,6 +8,19 @@ body {
   -webkit-font-smoothing: none;
 }
 
+#intro {
+  display: flex;
+  position: fixed;
+  margin-top: -10%;
+  z-index: 999;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  width: 100vw;
+  min-height: 120vh;
+  font-size: 2em;
+}
+
 .container {
   display: flex;
   flex-direction: column;
