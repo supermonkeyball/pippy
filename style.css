@@ -1,7 +1,9 @@
 body {
   margin: 0;
-  font-family: verdana;
+  font-family: roboto;
+  font-size: 1.2em;
   font-weight: bold;
+  letter-spacing: 1px;
   font-smooth: never;
   -webkit-font-smoothing: none;
 }
@@ -29,39 +31,39 @@ body {
   width: 30vw;
   align-items: center;
   justify-content: space-between;
+  margin: 2%;
 }
 
 .stats {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   margin: 2%;
 }
 
-.items {
+.items-head {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   margin: 2%;
+  background: #dadad8;
 }
 
 .meter {
   display: flex;
   flex-direction: column;
-  margin: 2%;
+  margin-bottom: 5%;
   width: 100px;
   height: 2vh;
 }
 
 #hunger-meter {
-  background: pink;
+  background: #fb7465;
   width: 100px;
   height: 2vh;
   border-radius: 4px;
 }
 
 #toilet-meter {
-  background: pink;
+  background: #fb7465;
   width: 100px;
   height: 2vh;
   border-radius: 4px;
@@ -69,16 +71,23 @@ body {
 
 #chicken {
   display: flex;
+  flex-direction: row;
   margin: 2%;
   width: 40px;
   height: 40px;
-  background: skyblue;
+  background: #fb7465;
 }
 
-#leash {
+#ball {
   display: flex;
+  flex-direction: row;
   margin: 2%;
   width: 40px;
   height: 40px;
-  background: skyblue;
+  background: #fb7465;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("https://cdn.glitch.global/95a4f36d-8f2e-43e2-9225-82e0b4e65cc3/roboto.ttf?v=1648214394138");
 }
