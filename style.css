@@ -10,6 +10,8 @@ body {
 
 #intro {
   display: flex;
+  flex-direction: column;
+  text-align: left;
   position: fixed;
   margin-top: -10%;
   z-index: 999;
@@ -18,7 +20,7 @@ body {
   background: white;
   width: 100vw;
   min-height: 120vh;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 .container {

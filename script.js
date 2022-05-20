@@ -1,6 +1,13 @@
 var pippy = document.getElementById("pippy");
 var death = document.getElementById("death");
 
+function save() {
+  var content = document.getElementById("text").value;
+  
+  localStorage.setItem("content", content);
+  
+}
+
 //stomach
 
 function stomach() {
