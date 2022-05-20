@@ -31,7 +31,7 @@ function eat() {
   console.log("clicked");
 
   var pippy = document.getElementById("pippy");
-  var pippyHappy = "https://cdn.glitch.global/f991fb0b-d232-4af4-8263-8db275e14328/trim.0E08199C-AAEA-4D2A-B8EE-5B093ED9848D.MOV?v=1653010433703";
+  var pippyHappy = "https://cdn.glitch.global/f991fb0b-d232-4af4-8263-8db275e14328/CD5BCB46-3421-4BBA-8E01-6DBEBF68C734.gif?v=1653014506715";
 
   var meter = document.getElementById("hunger-meter");
   var current_length = meter.offsetWidth;
@@ -42,7 +42,7 @@ function eat() {
   }
 
   meter.style.width = new_length + "px";
-  document.getElementById("pippy").src = pippyHappy;
+  document.getElementById("pippy").content = 'url("https://cdn.glitch.global/f991fb0b-d232-4af4-8263-8db275e14328/CD5BCB46-3421-4BBA-8E01-6DBEBF68C734.gif?v=1653014506715")';
 }
 
 chicken.addEventListener("click", eat);
