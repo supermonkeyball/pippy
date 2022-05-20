@@ -60,7 +60,7 @@ body {
   border-radius: 4px;
 }
 
-#fun-meter {
+#toilet-meter {
   background: pink;
   width: 100px;
   height: 2vh;
@@ -75,7 +75,7 @@ body {
   background: skyblue;
 }
 
-#ball {
+#leash {
   display: flex;
   margin: 2%;
   width: 40px;
